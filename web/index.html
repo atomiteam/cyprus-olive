@@ -14,9 +14,7 @@
         <p class="eyebrow">CYPRUS OLIVE</p>
         <h1>Kıbrıs Zeytin Kataloğu</h1>
       </div>
-      <div class="olive-mark" aria-hidden="true">
-        <span></span><span></span><span></span>
-      </div>
+      <div class="olive-mark" aria-hidden="true"><span></span><span></span><span></span></div>
     </div>
   </header>
 
@@ -34,10 +32,10 @@
         </div>
       </div>
       <figure class="catalogue-frame">
-        <a href="assets/zeytin-karsilastirma-katalogu.svg" target="_blank" rel="noopener" aria-label="Karşılaştırma kataloğunu tam boy aç">
-          <img src="assets/zeytin-karsilastirma-katalogu.svg" alt="Ladoelia, Kato Drys, Korakou, Gemlik, Manzanilla, Picual, Arbequina, Kalamata ve Koroneiki yaprak, meyve ve çekirdek karşılaştırma kataloğu">
+        <a id="catalogue-link" href="#" target="_blank" rel="noopener" aria-label="Karşılaştırma kataloğunu tam boy aç">
+          <img id="catalogue-image" alt="Ladoelia, Kato Drys, Korakou, Gemlik, Manzanilla, Picual, Arbequina, Kalamata ve Koroneiki yaprak, meyve ve çekirdek karşılaştırma kataloğu">
         </a>
-        <figcaption>Görsel saha ön elemesi içindir; kesin çeşit tanımı genetik doğrulama gerektirir. Görsele tıklayarak tam boy açabilirsiniz.</figcaption>
+        <figcaption>İlk hazırlanan gerçekçi görsel katalog kullanılmıştır. Görsel saha ön elemesi içindir; kesin çeşit tanımı genetik doğrulama gerektirir.</figcaption>
       </figure>
     </section>
 
@@ -48,7 +46,6 @@
           <h2 id="kayitlar">Fotoğraflanan Ağaçlar</h2>
         </div>
       </div>
-
       <div class="record-list">
         <a class="record" href="locations/magusa-onder-avm.html">
           <div class="record-index">001</div>
@@ -62,8 +59,20 @@
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">Cyprus Olive · Açık saha ve genetik araştırma kataloğu</div>
-  </footer>
+  <footer class="site-footer"><div class="container">Cyprus Olive · Açık saha ve genetik araştırma kataloğu</div></footer>
+
+  <script>
+    fetch('assets/zeytin-karsilastirma-katalogu.b64')
+      .then(response => {
+        if (!response.ok) throw new Error('Katalog görseli yüklenemedi');
+        return response.text();
+      })
+      .then(base64 => {
+        const src = 'data:image/jpeg;base64,' + base64.trim();
+        document.getElementById('catalogue-image').src = src;
+        document.getElementById('catalogue-link').href = src;
+      })
+      .catch(error => console.error(error));
+  </script>
 </body>
 </html>
