@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="980" viewBox="0 0 1400 980" role="img" aria-labelledby="title desc">
+  <title id="title">Zeytin Çeşitleri Karşılaştırma Kataloğu</title>
+  <desc id="desc">Ladoelia, Kato Drys, Korakou, Gemlik, Manzanilla, Picual, Arbequina, Kalamata ve Koroneiki için yaprak, meyve ve çekirdek karşılaştırması.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f7f5ec}.paper{fill:#fffdf7;stroke:#d9ddcf;stroke-width:2}.head{fill:#244a35}.sub{fill:#6a766c}.line{stroke:#dfe3d8;stroke-width:1.5}.band{fill:#eef2e8}.name{font:700 27px Georgia,serif;fill:#23462f}.small{font:17px Arial,sans-serif;fill:#3f4d43}.tiny{font:14px Arial,sans-serif;fill:#69756d}.leaf{fill:#647b55;stroke:#3e5c3b;stroke-width:2}.leaf2{fill:#aeb9a2;stroke:#73806f;stroke-width:2}.fruit{fill:#9ead4e;stroke:#637337;stroke-width:2}.fruit-dark{fill:#4d344c;stroke:#332534;stroke-width:2}.stone{fill:#b89b72;stroke:#8d704f;stroke-width:2}.vein{stroke:#6f573d;stroke-width:2;fill:none;opacity:.8}
+    </style>
+  </defs>
+  <rect class="bg" width="1400" height="980"/>
+  <rect class="paper" x="35" y="30" width="1330" height="920" rx="24"/>
+  <text x="80" y="88" font-family="Georgia,serif" font-size="42" font-weight="700" class="head">Zeytin Çeşitleri Karşılaştırma Kataloğu</text>
+  <text x="82" y="123" font-family="Arial,sans-serif" font-size="19" class="sub">Yaprak • meyve • çekirdek — saha ön tanımlaması için görsel referans</text>
+  <line x1="80" y1="148" x2="1320" y2="148" class="line"/>
+  <text x="86" y="180" class="tiny">Çeşit</text><text x="355" y="180" class="tiny">Yaprak</text><text x="675" y="180" class="tiny">Meyve</text><text x="1010" y="180" class="tiny">Çekirdek</text>
+
+  <!-- reusable row backgrounds -->
+  <rect class="band" x="72" y="198" width="1256" height="78" rx="12"/>
+  <rect class="band" x="72" y="370" width="1256" height="78" rx="12"/>
+  <rect class="band" x="72" y="542" width="1256" height="78" rx="12"/>
+  <rect class="band" x="72" y="714" width="1256" height="78" rx="12"/>
+  <rect class="band" x="72" y="886" width="1256" height="38" rx="12"/>
+
+  <!-- row labels -->
+  <g class="name">
+    <text x="90" y="240">Ladoelia</text><text x="90" y="326">Kato Drys</text><text x="90" y="412">Korakou</text><text x="90" y="498">Gemlik / Trilye</text><text x="90" y="584">Manzanilla</text><text x="90" y="670">Picual</text><text x="90" y="756">Arbequina</text><text x="90" y="842">Kalamata / Kalamon</text><text x="90" y="912">Koroneiki</text>
+  </g>
+  <g class="tiny">
+    <text x="90" y="262">Kıbrıs</text><text x="90" y="348">Kıbrıs</text><text x="90" y="434">Kıbrıs</text><text x="90" y="520">Türkiye</text><text x="90" y="606">İspanya</text><text x="90" y="692">İspanya</text><text x="90" y="778">İspanya</text><text x="90" y="864">Yunanistan</text><text x="90" y="932">Yunanistan</text>
+  </g>
+
+  <!-- leaves -->
+  <g transform="translate(345 205) rotate(-13)"><ellipse class="leaf" cx="50" cy="31" rx="68" ry="15"/><line x1="-12" y1="31" x2="118" y2="31" class="line"/></g>
+  <g transform="translate(345 291) rotate(-7)"><ellipse class="leaf2" cx="50" cy="31" rx="70" ry="13"/></g>
+  <g transform="translate(345 377) rotate(-10)"><ellipse class="leaf" cx="50" cy="31" rx="62" ry="18"/></g>
+  <g transform="translate(345 463) rotate(-4)"><ellipse class="leaf" cx="50" cy="31" rx="59" ry="13"/></g>
+  <g transform="translate(345 549) rotate(-8)"><ellipse class="leaf" cx="50" cy="31" rx="65" ry="17"/></g>
+  <g transform="translate(345 635) rotate(-8)"><ellipse class="leaf" cx="50" cy="31" rx="66" ry="15"/></g>
+  <g transform="translate(345 721) rotate(-12)"><ellipse class="leaf" cx="50" cy="31" rx="53" ry="12"/></g>
+  <g transform="translate(345 807) rotate(-11)"><ellipse class="leaf" cx="50" cy="31" rx="76" ry="16"/></g>
+  <g transform="translate(345 880) rotate(-10)"><ellipse class="leaf" cx="50" cy="25" rx="50" ry="11"/></g>
+
+  <!-- fruits -->
+  <g transform="translate(690 205)"><ellipse class="fruit" cx="54" cy="36" rx="34" ry="29"/><ellipse class="fruit" cx="104" cy="31" rx="30" ry="27"/><path d="M83 6c8-15 20-17 28-14" class="vein"/></g>
+  <g transform="translate(690 291)"><ellipse class="fruit" cx="55" cy="34" rx="29" ry="34"/><ellipse class="fruit" cx="105" cy="31" rx="27" ry="32"/></g>
+  <g transform="translate(690 377)"><ellipse class="fruit" cx="55" cy="36" rx="36" ry="30"/><ellipse class="fruit" cx="108" cy="34" rx="34" ry="30"/></g>
+  <g transform="translate(690 463)"><ellipse class="fruit-dark" cx="56" cy="36" rx="32" ry="29"/><ellipse class="fruit-dark" cx="108" cy="34" rx="30" ry="27"/></g>
+  <g transform="translate(690 549)"><ellipse class="fruit" cx="56" cy="36" rx="38" ry="31"/><ellipse class="fruit" cx="111" cy="34" rx="36" ry="30"/></g>
+  <g transform="translate(690 635)"><path class="fruit" d="M27 36c0-22 14-34 31-34 20 0 31 13 31 34 0 14-7 26-17 33l-10 8-10-8C36 62 27 50 27 36z"/><path class="fruit" d="M83 35c0-21 14-33 31-33 19 0 30 12 30 33 0 13-6 24-17 32l-10 8-10-8c-16-8-24-19-24-32z"/></g>
+  <g transform="translate(690 721)"><ellipse class="fruit" cx="56" cy="36" rx="26" ry="23"/><ellipse class="fruit" cx="101" cy="34" rx="24" ry="22"/></g>
+  <g transform="translate(690 807)"><ellipse class="fruit-dark" cx="55" cy="36" rx="26" ry="39" transform="rotate(-16 55 36)"/><ellipse class="fruit-dark" cx="111" cy="34" rx="25" ry="38" transform="rotate(-15 111 34)"/></g>
+  <g transform="translate(690 875)"><ellipse class="fruit" cx="56" cy="27" rx="23" ry="21"/><ellipse class="fruit" cx="97" cy="25" rx="21" ry="20"/></g>
+
+  <!-- stones -->
+  <g transform="translate(1015 205)"><ellipse class="stone" cx="47" cy="36" rx="21" ry="31"/><path class="vein" d="M42 10c-7 18-7 36 1 54M51 9c6 17 7 36 1 55"/></g>
+  <g transform="translate(1015 291)"><ellipse class="stone" cx="47" cy="36" rx="19" ry="35"/><path class="vein" d="M39 8c-5 21-5 39 0 57M47 6c1 22 2 40 0 61M55 9c6 19 5 39 1 56"/></g>
+  <g transform="translate(1015 377)"><ellipse class="stone" cx="47" cy="36" rx="24" ry="31"/><path class="vein" d="M40 11c-6 18-5 35 1 51M51 10c5 17 5 35 0 53"/></g>
+  <g transform="translate(1015 463)"><ellipse class="stone" cx="47" cy="36" rx="19" ry="32"/><path class="vein" d="M40 10c-6 18-5 36 1 52M52 10c5 17 5 35 0 52"/></g>
+  <g transform="translate(1015 549)"><ellipse class="stone" cx="47" cy="36" rx="22" ry="32"/><path class="vein" d="M40 10c-5 19-5 36 1 53M52 10c5 18 5 36 0 53"/></g>
+  <g transform="translate(1015 635)"><path class="stone" d="M47 3c16 11 23 25 20 42-2 14-10 26-20 34-10-8-18-20-20-34-3-17 4-31 20-42z"/><path class="vein" d="M47 8v59M38 14c-6 16-5 31 0 46M56 14c6 16 5 31 0 46"/></g>
+  <g transform="translate(1015 721)"><ellipse class="stone" cx="47" cy="36" rx="17" ry="26"/><path class="vein" d="M42 14c-4 14-4 28 0 42M51 14c4 13 4 28 0 42"/></g>
+  <g transform="translate(1015 807)"><ellipse class="stone" cx="47" cy="36" rx="17" ry="38"/><path class="vein" d="M40 8c-5 22-5 40 0 57M52 8c5 21 5 40 0 57"/></g>
+  <g transform="translate(1015 875)"><ellipse class="stone" cx="47" cy="27" rx="15" ry="25"/><path class="vein" d="M42 8c-4 14-4 27 0 39M51 8c4 14 4 27 0 39"/></g>
+
+  <!-- descriptors -->
+  <g class="small">
+    <text x="1130" y="232">orta • oval • dolgun</text><text x="1130" y="318">uzamış • oluklu</text><text x="1130" y="404">etli • geniş</text><text x="1130" y="490">küçük-orta • koyu</text><text x="1130" y="576">iri • yuvarlak-oval</text><text x="1130" y="662">uzun-oval • sivri uç</text><text x="1130" y="748">küçük • yuvarlak</text><text x="1130" y="834">iri • bademimsi</text><text x="1130" y="907">küçük • yağlık</text>
+  </g>
+  <text x="82" y="945" class="tiny">Not: Görseller temsili morfolojik karşılaştırmadır. Kesin teşhis için standardize ölçüm ve genetik doğrulama gerekir.</text>
+</svg>
