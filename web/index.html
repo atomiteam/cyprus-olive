@@ -62,17 +62,34 @@
   <footer class="site-footer"><div class="container">Cyprus Olive · Açık saha ve genetik araştırma kataloğu</div></footer>
 
   <script>
-    fetch('assets/zeytin-karsilastirma-katalogu.b64')
-      .then(response => {
-        if (!response.ok) throw new Error('Katalog görseli yüklenemedi');
+    const catalogueParts = [
+      'assets/catalog-parts/good1.b64',
+      'assets/catalog-parts/good2.b64',
+      'assets/catalog-parts/good3.b64',
+      'assets/catalog-parts/good4a.b64',
+      'assets/catalog-parts/good4b.b64',
+      'assets/catalog-parts/good5.b64',
+      'assets/catalog-parts/good6.b64'
+    ];
+
+    Promise.all(catalogueParts.map(path =>
+      fetch(path).then(response => {
+        if (!response.ok) throw new Error('Katalog parçası yüklenemedi: ' + path);
         return response.text();
       })
-      .then(base64 => {
-        const src = 'data:image/jpeg;base64,' + base64.trim();
+    ))
+      .then(parts => {
+        const base64 = parts.join('').replace(/\s/g, '');
+        const src = 'data:image/jpeg;base64,' + base64;
         document.getElementById('catalogue-image').src = src;
         document.getElementById('catalogue-link').href = src;
       })
-      .catch(error => console.error(error));
+      .catch(error => {
+        console.error(error);
+        const fallback = 'assets/zeytin-karsilastirma-katalogu.svg';
+        document.getElementById('catalogue-image').src = fallback;
+        document.getElementById('catalogue-link').href = fallback;
+      });
   </script>
 </body>
 </html>
