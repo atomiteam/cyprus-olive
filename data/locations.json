@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "locations": [
+    {
+      "id": "MAG-ONDER-001",
+      "name": "Gazimağusa — Önder AVM yanı otopark",
+      "region": "Gazimağusa",
+      "country": "Kıbrıs",
+      "status": "active-analysis",
+      "observation": "Açık yeşil, sulu ve dolgun meyve; dar-uzun ve gümüşi alt yüzlü yaprak; orta boy, dolgun-oval ve oluklu çekirdek.",
+      "candidateCultivars": ["Ladoelia", "Kato Drys", "Korakou"],
+      "identificationConfidence": "unconfirmed",
+      "geneticSample": null,
+      "page": "web/locations/magusa-onder-avm.html",
+      "assetFolder": "assets/locations/magusa-onder-avm/"
+    }
+  ]
+}
